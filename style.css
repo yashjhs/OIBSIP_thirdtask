@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #1a1a1b;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+header h1 {
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(240, 201, 29);
+}
+
+.wrapper {
+    background-color: #fff;
+    max-width: 405px;
+    margin: 90px auto;
+    border-radius: 7px;
+    padding: 28px 0;
+}
+
+.task-input {
+    height: 52px;
+    padding: 0 25px;
+    position: relative;
+}
+
+.task-input img {
+    position: absolute;
+    top: 50%;
+    transform: translate(17px, -50%);
+}
+
+.task-input input {
+    height: 100%;
+    width: 100%;
+    padding: 0 20px 0 53px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+.task-input input::placeholder {
+    color: #bfbfbf;
+}
+
+.controls,
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls {
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.filters span {
+    margin: 0 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.filters span:first-child {
+    margin-left: 0;
+}
+
+.filters span.active {
+    color: #3c87ff;
+}
+
+.controls .clearBtn {
+    outline: none;
+    border: none;
+    background: #3c87ff;
+    color: #fff;
+    padding: 7px 13px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.task-box {
+    margin: 20px 25px;
+}
+
+.task-box .task {
+    list-style: none;
+    font-size: 17px;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-box .task:last-child {
+    margin-bottom: none;
+    padding-bottom: none;
+    border-bottom: none;
+}
+
+.task label {
+    display: flex;
+}
+
+.task label p.checked {
+    text-decoration: line-through;
+}
+
+.task label input {
+    margin-top: 6px;
+    margin-right: 12px;
+}
+
+.task .settings {
+    cursor: pointer;
+    position: relative;
+}
